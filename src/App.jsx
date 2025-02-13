@@ -1,11 +1,10 @@
-import React from 'react';
-import { Frutas } from "./components/BuscarFrutas"
+import { MarketList } from "./components/MarketList/MarketList";
 
 function App() {
 	return (
 
 		<div className="App">
-			<Frutas />
+			<MarketList />
 		</div>
 	);
 }
