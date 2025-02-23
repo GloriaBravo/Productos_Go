@@ -2,61 +2,61 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
 	font-family: Arial, sans-serif;
 	background-color: #f7f7f7;
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: center; /* Centra los elementos horizontalmente */
+	align-items: center; /* Centra los elementos verticalmente */
 	height: 100vh;
 	margin: 0;
 	padding: 20px;
-  }
-  
-  .productos-container {
+}
+
+.productos-container {
 	width: 100%;
 	max-width: 1000px;
 	display: flex;
 	justify-content: space-between; /* Distribuir espacio entre los contenedores */
 	gap: 40px;
-  }
-  
-  .form-container,
-  .lista-container {
-	background-color: #fff;
+}
+
+.form-container,
+.lista-container {
+	background-color: #bde3ca;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 20px;
-	width: 45%; /* Ajustar el tamaño para que ocupen 45% del contenedor principal */
-  }
-  
-  h2 {
+	width: 45%; /* Ajustado a 45% para que ocupen 45% de la mitad */
+}
+
+h2 {
 	color: #333;
 	text-align: center;
-  }
-  
-  .input-container {
+}
+
+.input-container {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 10px;
-  }
-  
-  input {
+}
+
+input {
 	padding: 10px;
 	font-size: 16px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	outline: none;
 	margin-top: 5px;
-  }
-  
-  input:focus {
+}
+
+input:focus {
 	border-color: #42ceea;
-  }
-  
-  button {
+}
+
+button {
 	background-color: #42ceea;
 	color: #fff;
 	padding: 12px 20px;
@@ -65,32 +65,31 @@
 	cursor: pointer;
 	font-size: 16px;
 	width: 100%;
-  }
-  
-  button:hover {
+}
+
+button:hover {
 	background-color: #38b7d7;
-  }
-  
-  .lista-productos {
+}
+
+.lista-productos {
 	margin-top: 20px;
-  }
-  
-  ul {
+}
+
+ul {
 	list-style: none;
 	padding: 0;
-  }
-  
-  li {
-	background-color: #e9f7f9;
+}
+
+li {
+	background-color: #249dad;
 	margin: 10px 0;
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h3 {
+}
+
+h3 {
 	text-align: center;
 	color: #333;
 	margin-top: 20px;
-  }
-  
+}
