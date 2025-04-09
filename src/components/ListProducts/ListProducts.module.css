@@ -1,0 +1,19 @@
+.lista-container {
+    background-color: rgba(189, 227, 202, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item {
+    background-color: #249dad;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.product-item div {
+    margin: 5px 0;
+}
