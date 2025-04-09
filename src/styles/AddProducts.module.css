@@ -1,0 +1,48 @@
+.product-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e3f2fd; /* Azul suave */
+  border-radius: 10px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #90caf9; /* Azul claro */
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1976d2; /* Azul fuerte */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Mensajes de éxito y error */
+.success-message {
+  color: #388e3c; /* Verde */
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: #d32f2f; /* Rojo */
+  margin-bottom: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .product-form {
+    width: 90%;
+    padding: 15px;
+  }
+}

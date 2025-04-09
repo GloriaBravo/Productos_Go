@@ -1,0 +1,97 @@
+/* src/styles/Register.css */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa; /* Fondo azul claro, igual que Login.css */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0277bd; /* Azul más oscuro */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre elementos del formulario */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #0277bd; /* Borde azul al hacer focus */
+  }
+  
+  button {
+    background-color: #0277bd; /* Azul principal */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #90caf9; /* Azul claro cuando está deshabilitado */
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #01579b; /* Azul oscuro en hover */
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #0277bd; /* Azul principal */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 600px) {
+    .register-container {
+      max-width: 90%;
+      margin: 20px auto;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      padding: 12px;
+      font-size: 18px;
+    }
+  }

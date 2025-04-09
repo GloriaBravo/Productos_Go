@@ -1,0 +1,110 @@
+/* Login.css */
+.login-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #e0f7fa; /* Fondo azul claro */
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 400px;
+	margin: 50px auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agregar sombra suave para darle profundidad */
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0277bd; /* Azul más oscuro */
+	margin-bottom: 20px;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* Espaciado entre elementos del formulario */
+}
+
+button {
+	background-color: #0277bd; /* Azul principal */
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	margin: 10px 0;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+button:disabled {
+	background-color: #90caf9; /* Azul claro cuando está deshabilitado */
+	cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+	background-color: #01579b; /* Azul oscuro en hover */
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+input:focus {
+	outline: none;
+	border-color: #0277bd; /* Borde azul al hacer focus */
+}
+
+.error-message {
+	color: red;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+#recaptcha-container {
+	margin-bottom: 20px;
+}
+
+/* Estilos para el logo en el login */
+.login-logo {
+	width: 100px; /* Ajusta el tamaño según lo que necesites */
+	height: auto;
+	margin-bottom: 20px; /* Espacio entre el logo y los botones */
+	border-radius: 10px; /* Opcional: bordes redondeados en el logo */
+}
+
+/* Estilos para el enlace */
+a {
+	color: #0277bd; /* Azul principal */
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+	.login-container {
+		max-width: 90%; /* En pantallas pequeñas, el contenedor usa más ancho */
+		margin: 20px auto; /* Ajusta el margen para pantallas pequeñas */
+	}
+
+	h2 {
+		font-size: 20px; /* Titulo más pequeño en pantallas pequeñas */
+	}
+
+	button {
+		padding: 12px; /* Botones más grandes en móviles */
+		font-size: 18px; /* Fuente más grande en botones */
+	}
+}

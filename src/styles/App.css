@@ -1,0 +1,52 @@
+/* App.css */
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #e0f7fa;  /* Color de fondo azul claro */
+  color: #00796b;  /* Color de texto verde azulado */
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #004d40;  /* Color de texto para los títulos */
+  text-align: center;
+}
+
+button {
+  background-color: #00796b;  /* Botones de color verde azulado */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #004d40;  /* Hover más oscuro para botones */
+}
+
+.error-message {
+  color: #d32f2f;  /* Color rojo para errores */
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

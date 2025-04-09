@@ -1,0 +1,56 @@
+/* src/styles/Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f7fa; /* Fondo azul claro, igual que Login.css */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0277bd; /* Azul más oscuro */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #0277bd; /* Azul principal */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el logo en la página de inicio */
+.home-logo {
+  width: 100px; /* Igual que en Login.css */
+  height: auto;
+  margin-bottom: 20px; /* Espacio entre el logo y el título */
+  border-radius: 10px; /* Bordes redondeados, igual que en Login.css */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .home-container {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

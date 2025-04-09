@@ -1,11 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App"; // Importamos el componente principal
-import "./index.css"; // Importamos el archivo de estilos globales
+// src/index.jsx
+import React from "react"; // Añadimos la importación de React
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./utils/App";
+import { ProductProvider } from "./ProductContext/ProductContext";
+import "./styles/index.css";
 
-ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
-	document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <React.StrictMode>
+    <Router>
+      <ProductProvider>
+        <App />
+      </ProductProvider>
+    </Router>
+  </React.StrictMode>
 );
